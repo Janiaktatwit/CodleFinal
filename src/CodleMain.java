@@ -1,9 +1,11 @@
+import javafx.scene.control.Button;
 
 public class CodleMain {
 
 	public static void main(String[] args) {
-		RandomWord.getWord();
-
+		Button b1 = new Button();
+		
+		
 	}
 
 }
