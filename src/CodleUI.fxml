@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="725.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="77.0" prefWidth="278.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3">
+         <children>
+            <VBox fillWidth="false" prefHeight="77.0" prefWidth="27.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Q" />
+                  <Button mnemonicParsing="false" text="A" />
+                  <Button mnemonicParsing="false" text="Z" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="77.0" prefWidth="29.0">
+               <children>
+                  <Button mnemonicParsing="false" text="W" />
+                  <Button mnemonicParsing="false" text="S" />
+                  <Button mnemonicParsing="false" text="X" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="179.0" prefWidth="26.0">
+               <children>
+                  <Button mnemonicParsing="false" text="E" />
+                  <Button mnemonicParsing="false" text="D" />
+                  <Button mnemonicParsing="false" text="C" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="77.0" prefWidth="26.0">
+               <children>
+                  <Button mnemonicParsing="false" text="R" />
+                  <Button mnemonicParsing="false" text="F" />
+                  <Button mnemonicParsing="false" text="V" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="77.0" prefWidth="27.0">
+               <children>
+                  <Button mnemonicParsing="false" text="T" />
+                  <Button mnemonicParsing="false" text="G" />
+                  <Button mnemonicParsing="false" text="B" />
+               </children>
+            </VBox>
+            <VBox prefHeight="77.0" prefWidth="26.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Y" />
+                  <Button mnemonicParsing="false" text="H" />
+                  <Button mnemonicParsing="false" text="N" />
+               </children>
+            </VBox>
+            <VBox prefHeight="179.0" prefWidth="27.0">
+               <children>
+                  <Button mnemonicParsing="false" text="U" />
+                  <Button mnemonicParsing="false" text="J" />
+                  <Button mnemonicParsing="false" text="M" />
+               </children>
+            </VBox>
+            <VBox prefHeight="77.0" prefWidth="26.0">
+               <children>
+                  <Button mnemonicParsing="false" text="I" />
+                  <Button mnemonicParsing="false" text="K" />
+               </children>
+            </VBox>
+            <VBox prefHeight="179.0" prefWidth="27.0">
+               <children>
+                  <Button mnemonicParsing="false" text="O" />
+                  <Button mnemonicParsing="false" text="L" />
+               </children>
+            </VBox>
+            <VBox prefHeight="179.0" prefWidth="27.0">
+               <children>
+                  <Button mnemonicParsing="false" text="P" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="125.0" />
+         </padding>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CODLE!" textAlignment="CENTER" wrappingWidth="482.3367655277252" x="250.0" y="50.0" GridPane.columnIndex="1" GridPane.columnSpan="3">
+         <font>
+            <Font name="Comic Sans MS" size="55.0" />
+         </font>
+      </Text>
+   </children>
+</GridPane>
