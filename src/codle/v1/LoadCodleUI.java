@@ -25,7 +25,7 @@ public class LoadCodleUI extends Application implements Initializable {
 		primaryStage.setScene(new Scene(p));
 		primaryStage.show();
 	}
-	
+	 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		

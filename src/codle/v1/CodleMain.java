@@ -50,6 +50,6 @@ public class CodleMain extends Application {
 		primaryStage.setScene(new Scene(grid, 300, 250));
 		primaryStage.show();
 		
-	}
+	} 
 
 }
