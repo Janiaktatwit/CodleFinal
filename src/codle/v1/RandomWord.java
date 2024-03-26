@@ -20,14 +20,20 @@ public class RandomWord {
 							"IMPORT", "RETURN", "GITHUB", "EXTEND",
 							"COMMIT", "LAMBDA"};
 		
+		String[] arr3 = {"ASSERT", "VECTOR", "OUTPUT", "MEMORY", "DEBUGS", 
+							"SWITCH", "ACCESS", "SOCKET", "EXPORT", "CLIENT"};
+		
+		String[] arr4 = {"LOGGER", "KERNEL", "SOURCE", "OBJECT", "ACTION",
+							"METRIC", "GLOBAL", "DEFINE", "STREAM", "RANDOM"};
+		
+		String[][] arrMatrix = {arr1, arr2, arr3, arr4};
+		
 		Random rnum = new Random();
 		int ranNum = rnum.nextInt(10);
+		int ranPlace = rnum.nextInt(arrMatrix.length);
 
-		if (rnum.nextInt(2) == 1) {
-			return arr1[ranNum];
-		} 
 		
-		return arr2[ranNum];
+		return arrMatrix[ranPlace][ranNum];
 		
 	}
 }
