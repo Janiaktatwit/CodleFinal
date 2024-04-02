@@ -3,18 +3,15 @@ package codle.v1;
 
 import java.util.Random;
 
-public class RandomWord {
-	private String word;
+public abstract class RandomWord {
 
-	public String getWord() {
-		return randomWord();
-	}
+	public abstract String getWord();
 
 	public String randomWord() {
 		
 		String[] arr1 = { "CODING", "DOUBLE", "SYNTAX", "STRING", 
 							"METHOD", "MODULE", "BINARY", "BUFFER", 
-							"COMPILE", "ACCESS" };
+							"EASTER", "ACCESS" };
 		
 		String[] arr2 = {"BUGGED", "JAVAFX", "PUBLIC", "STATIC",
 							"IMPORT", "RETURN", "GITHUB", "EXTEND",

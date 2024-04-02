@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class TestGuess {
 	public static void main(String[] args) {
 		String answer = "coding";
-		String rWord = new RandomWord().getWord();
 
 		try (Scanner input = new Scanner(System.in);) {
 //			Guess g = new Guess("STRING");
@@ -21,7 +20,8 @@ public class TestGuess {
 			
 			for (int z = 0; z < 6; z++) {
 				System.out.print("\nEnter a six-letter word: ");
-				Guess guess = new Guess(input.nextLine());
+				Guess guess = new Guess();
+				guess.setGuess(input.nextLine());
 
 				String[] c = guess.setColor();
 				for (int i = 0; i < c.length; i++) {

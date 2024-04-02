@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -44,22 +45,60 @@ public class CodleMain extends Application {
 		grid.add(key, 1, 3);
 		grid.add(entry, 3, 2);
 		grid.add(submit, 3, 3);
-		RandomWord ranWord = new RandomWord();	
 		grid.setOnKeyPressed(e -> {
 			word2.setText(String.format("%s", e.getCode()));
 		});
-		String g = "coding";
-		//Guess g = new Guess(new RandomWord().toString());
+		
+		final Rectangle r1 = new Rectangle(50, 50);
+		final Rectangle r2 = new Rectangle(50, 50);
+		final Rectangle r3 = new Rectangle(50, 50);
+		final Rectangle r4 = new Rectangle(50, 50);
+		final Rectangle r5 = new Rectangle(50, 50);
+		final Rectangle r6 = new Rectangle(50, 50);
+		Rectangle[] rectangles = {r1, r2, r3, r4, r5, r6};
+		
+		for (Rectangle r: rectangles) {
+			r.setFill(Color.PINK);
+			r.autosize();
+			r.setStroke(Color.PINK);
+		}
+		
+		grid.add(r1, 1, 0);
+		grid.add(r2, 2, 0);
+		grid.add(r3, 3, 0);
+		grid.add(r4, 4, 0);
+		grid.add(r5, 5, 0);
+		grid.add(r6, 6, 0);
+		
+		// String g = "coding";
+		Guess g = new Guess();
 		
 		btn.setOnMouseClicked(e -> {
-			word.setText(ranWord.randomWord());
+			g.setGuess(entry.getText());
+			word.setText(g.getWord());
 		});
 		submit.setOnMouseClicked(e -> {
-			if (entry.getText().equals(g)) {
+			g.setGuess(entry.getText());
+			if (g.validateLength() == false) {
+				key.setText("Invalid Word Length");
+			} else if (g.checkWin(0) == true) {
 				key.setText("Correct");
+			} else {
+				String[] colors = g.setColor();
+				int i = 0;
+				for(Rectangle r: rectangles) {
+					if (colors[i].equals("green")) {
+						r.setFill(Color.GREEN);
+					} else if (colors[i].equals("yellow")) {
+						r.setFill(Color.YELLOW);
+					} else {
+						r.setFill(Color.GREY);
+					}
+					++i;
+				}
 			}
 		});
-		primaryStage.setScene(new Scene(grid, 300, 250));
+		primaryStage.setScene(new Scene(grid, 350, 300));
 		primaryStage.show();
 		
 		

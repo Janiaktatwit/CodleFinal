@@ -5,14 +5,22 @@ package codle.v1;
  * 
  * @author Gus Cook
  */
-public class Guess {
+public class Guess extends RandomWord {
 	private String guess;
 	private char[] guessArray;
-	public String ans = new RandomWord().getWord();
+	private String ans = getWord();
 	
-	public Guess(String s) {
-		this.guess = s;
-		this.guessArray = this.guess.toCharArray();
+	public Guess() {}
+	
+	public String getGuess() {
+		return this.guess;
+	}
+	public void setGuess(String s) {
+		this.guess = s.toUpperCase();
+	}
+	
+	public String getAns() {
+		return this.ans;
 	}
 
 	public boolean validateLength() {
@@ -21,57 +29,21 @@ public class Guess {
 		}
 		return false;
 	}
-
-	public boolean compareLetters(char[] c, int index) {
-
-		if (this.guessArray[index] == c[index]) {
-			return true;
-		}
-		return false;
-	}
-
-	public int[] compareLettersGreen(String answer) {
-
-		char[] answerA = answer.toCharArray();
-		int[] indexes = new int[6];
-
-		for (int i = 0; i < 6; ++i) {
-			if (compareLetters(answerA, i)) {
-				indexes[i] = i;
-			} else {
-				indexes[i] = -1;
-			}
-		}
-
-		return indexes;
-	}
-
-	public int compareLettersYellow(String answer) {
-
-		char[] answerA = answer.toCharArray();
-		int count = 0;
-
-		if (answer.equals(this.guess)) {
-			return 0;
-		}
-
-		return 0;
-	}
-
+	
 	@Override
-	public String toString() {
-		return this.guess;
+	public String getWord() {
+		return randomWord();
 	}
 
 	public int compareLettersTJ( int index) {
 
-		char g = guess.charAt(index);
-		if (g == ans.charAt(index)) { // check if green return
+		char g = this.guess.charAt(index);
+		if (g == this.ans.charAt(index)) { // check if green return
 			return 2;
 		}
 
-		for (int i = 0; i < ans.length(); i++) {
-			if (g == ans.charAt(i)) {
+		for (int i = 0; i < this.ans.length(); i++) {
+			if (g == this.ans.charAt(i)) {
 				return -2;
 			}
 		}
@@ -82,15 +54,15 @@ public class Guess {
 		if(i==6) {
 			return true;
 		}
-		if(guess.charAt(i)!=ans.charAt(i)){
+		if(this.guess.charAt(i) != this.ans.charAt(i)){
 			return false;
 		}
-		return(checkWin(i++));
+		return checkWin(++i);
 	}
 	
 	public String[] setColor() {
-		String[] color = new String[guess.length()];
-		for(int i = 0;i<guess.length();i++) {
+		String[] color = new String[this.guess.length()];
+		for(int i = 0;i<this.guess.length();i++) {
 			int t = compareLettersTJ(i);
 			switch(t) {
 			case -2:
@@ -104,6 +76,11 @@ public class Guess {
 			}
 		}
 		return color;
+	}
+	
+	@Override
+	public String toString() {
+		return this.guess;
 	}
 }
 
