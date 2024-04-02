@@ -10,29 +10,24 @@ import java.util.Scanner;
 public class TestGuess {
 	public static void main(String[] args) {
 		String answer = "coding";
-		
+		String rWord = new RandomWord().getWord();
+
 		try (Scanner input = new Scanner(System.in);) {
-			System.out.print("Enter a six-letter word: ");
-			Guess guess = new Guess(input.nextLine());
-			RandomWord rWord = new RandomWord();
-			if(guess.validateLength()) {
-			int[] intArr = new int[6];
-				for(int i = 0;i<6;i++) {
-					intArr[i]=guess.compareLettersTJ("abcdef", i);
-				}
-				for(int i = 0; i<6;i++) {
-					System.out.println(intArr[i]);
-				}
-				
-			}
-			
-//			if (guess.validateLength()) {
-//				System.out.println(guess.compareLettersGreen(answer));
-//			} else {
-//				System.out.println("Invalid word");
+//			Guess g = new Guess("STRING");
+//			String[] c = g.setColor();
+//			for(int i = 0; i<c.length;i++) {
+//				System.out.printf("%s ", c[i]);
 //			}
+			
+			for (int z = 0; z < 6; z++) {
+				System.out.print("\nEnter a six-letter word: ");
+				Guess guess = new Guess(input.nextLine());
+
+				String[] c = guess.setColor();
+				for (int i = 0; i < c.length; i++) {
+					System.out.printf("%s ", c[i]);
+				}
+			}
 		}
 	}
-
 }
-   // end class TestGuess

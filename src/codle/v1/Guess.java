@@ -8,7 +8,8 @@ package codle.v1;
 public class Guess {
 	private String guess;
 	private char[] guessArray;
-
+	public String ans = new RandomWord().getWord();
+	
 	public Guess(String s) {
 		this.guess = s;
 		this.guessArray = this.guess.toCharArray();
@@ -62,7 +63,7 @@ public class Guess {
 		return this.guess;
 	}
 
-	public int compareLettersTJ(String ans, int index) {
+	public int compareLettersTJ( int index) {
 
 		char g = guess.charAt(index);
 		if (g == ans.charAt(index)) { // check if green return
@@ -75,6 +76,23 @@ public class Guess {
 			}
 		}
 		return 0;
+	}
+	public String[] setColor() {
+		String[] color = new String[guess.length()];
+		for(int i = 0;i<guess.length();i++) {
+			int t = compareLettersTJ(i);
+			switch(t) {
+			case -2:
+				color[i]="yellow";
+				break;
+			case 0:
+				color[i]="grey";
+				break;
+			case 2:
+				color[i]="green";	
+			}
+		}
+		return color;
 	}
 }
 
