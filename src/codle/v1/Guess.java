@@ -77,6 +77,17 @@ public class Guess {
 		}
 		return 0;
 	}
+	
+	public boolean checkWin(int i) {
+		if(i==6) {
+			return true;
+		}
+		if(guess.charAt(i)!=ans.charAt(i)){
+			return false;
+		}
+		return(checkWin(i++));
+	}
+	
 	public String[] setColor() {
 		String[] color = new String[guess.length()];
 		for(int i = 0;i<guess.length();i++) {
