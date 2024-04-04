@@ -127,21 +127,24 @@ public class LoadCodleUI extends Application implements Initializable {
 					}
 					j = 0;
 					
-					for(int l = 0; l < colors.length; ++l) {
+					/*
+					 * 
+					 */
+					for(int l = n-6; l < n; ++l) {
 						for(int k = 0; k < this.letters.length; ++k) {
 							try {
 								Color color = (Color) this.letters[k].getBackground().getFills().get(0).getFill();
-								if (this.letters[k].getText().equals(this.codleArray[l].getText())) {
+								if (this.codleArray[l].getText().equals(this.letters[k].getText())) {
 									if (color.equals(Color.GREEN)) {}
-									else if (color.equals(Color.YELLOW) && colors[l].equals("grey")) {}
+									else if (color.equals(Color.YELLOW) && colors[j].equals("grey")) {}
 									else {
-										if (colors[l].equals("green")) {
+										if (colors[j].equals("green")) {
 											this.letters[k].setStyle("-fx-background-color: #00ff00;");
 										}
-										if (colors[l].equals("yellow")) {
+										if (colors[j].equals("yellow")) {
 											this.letters[k].setStyle("-fx-background-color: #ffff00;");
 										}
-										if (colors[l].equals("grey")) {
+										if (colors[j].equals("grey")) {
 											this.letters[k].setStyle("-fx-background-color: #444444;");
 										}
 									}
@@ -150,6 +153,7 @@ public class LoadCodleUI extends Application implements Initializable {
 							}
 							
 						}
+						++j;
 					}
 					
 					
