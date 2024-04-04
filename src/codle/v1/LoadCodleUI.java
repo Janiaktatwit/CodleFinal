@@ -121,7 +121,7 @@ public class LoadCodleUI extends Application implements Initializable {
 						} else if (colors[j].equals("yellow")) {
 							this.codleArray[i].setStyle("-fx-background-color: #ffff00;");
 						} else {
-							this.codleArray[i].setStyle("-fx-background-color: #444444;");
+							this.codleArray[i].setStyle("-fx-background-color: #777777;");
 						}
 						++j;
 					}
@@ -145,7 +145,7 @@ public class LoadCodleUI extends Application implements Initializable {
 											this.letters[k].setStyle("-fx-background-color: #ffff00;");
 										}
 										if (colors[j].equals("grey")) {
-											this.letters[k].setStyle("-fx-background-color: #444444;");
+											this.letters[k].setStyle("-fx-background-color: #777777;");
 										}
 									}
 								}
