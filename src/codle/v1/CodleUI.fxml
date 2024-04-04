@@ -2,260 +2,500 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
- 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
-  </rowConstraints>
+
+<AnchorPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codle.v1.LoadCodleUI">
    <children>
-      <HBox prefHeight="77.0" prefWidth="278.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3">
-         <children>
-            <VBox fillWidth="false" prefHeight="77.0" prefWidth="27.0">
-               <children>
-                  <Button mnemonicParsing="false" text="Q" />
-                  <Button mnemonicParsing="false" text="A" />
-                  <Button mnemonicParsing="false" text="Z" />
-               </children>
-            </VBox>
-            <VBox fillWidth="false" prefHeight="77.0" prefWidth="29.0">
-               <children>
-                  <Button mnemonicParsing="false" text="W" />
-                  <Button mnemonicParsing="false" text="S" />
-                  <Button mnemonicParsing="false" text="X" />
-               </children>
-            </VBox>
-            <VBox fillWidth="false" prefHeight="179.0" prefWidth="26.0">
-               <children>
-                  <Button mnemonicParsing="false" text="E" />
-                  <Button mnemonicParsing="false" text="D" />
-                  <Button mnemonicParsing="false" text="C" />
-               </children>
-            </VBox>
-            <VBox fillWidth="false" prefHeight="77.0" prefWidth="26.0">
-               <children>
-                  <Button mnemonicParsing="false" text="R" />
-                  <Button mnemonicParsing="false" text="F" />
-                  <Button mnemonicParsing="false" text="V" />
-               </children>
-            </VBox>
-            <VBox fillWidth="false" prefHeight="77.0" prefWidth="27.0">
-               <children>
-                  <Button mnemonicParsing="false" text="T" />
-                  <Button mnemonicParsing="false" text="G" />
-                  <Button mnemonicParsing="false" text="B" />
-               </children>
-            </VBox>
-            <VBox prefHeight="77.0" prefWidth="26.0">
-               <children>
-                  <Button mnemonicParsing="false" text="Y" />
-                  <Button mnemonicParsing="false" text="H" />
-                  <Button mnemonicParsing="false" text="N" />
-               </children>
-            </VBox>
-            <VBox prefHeight="179.0" prefWidth="27.0">
-               <children>
-                  <Button mnemonicParsing="false" text="U" />
-                  <Button mnemonicParsing="false" text="J" />
-                  <Button mnemonicParsing="false" text="M" />
-               </children>
-            </VBox>
-            <VBox prefHeight="77.0" prefWidth="26.0">
-               <children>
-                  <Button mnemonicParsing="false" text="I" />
-                  <Button mnemonicParsing="false" text="K" />
-               </children>
-            </VBox>
-            <VBox prefHeight="179.0" prefWidth="27.0">
-               <children>
-                  <Button mnemonicParsing="false" text="O" />
-                  <Button mnemonicParsing="false" text="L" />
-               </children>
-            </VBox>
-            <VBox prefHeight="179.0" prefWidth="27.0">
-               <children>
-                  <Button mnemonicParsing="false" text="P" />
-               </children>
-            </VBox>
-         </children>
-         <padding>
-            <Insets left="125.0" />
-         </padding>
-      </HBox>
-      <Text fill="#15fc00" strokeType="OUTSIDE" strokeWidth="0.0" text="CODLE!" textAlignment="CENTER" wrappingWidth="482.3367655277252" x="250.0" y="50.0" GridPane.columnIndex="1" GridPane.columnSpan="3">
+      <Text fill="#3307eb" layoutX="231.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codle!" textAlignment="CENTER" wrappingWidth="192.8820343017578">
          <font>
-            <Font name="Comic Sans MS" size="55.0" />
+            <Font name="Comic Sans MS" size="42.0" />
          </font>
-         <GridPane.margin>
-            <Insets bottom="50.0" left="25.0" />
-         </GridPane.margin>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="75.0" left="60.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="75.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="75.0" left="155.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="75.0" left="120.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="75.0" left="95.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="75.0" left="-5.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-40.0" left="95.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-40.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-40.0" left="155.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-40.0" left="60.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-40.0" left="120.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-40.0" left="-5.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3">
-         <GridPane.margin>
-            <Insets bottom="-160.0" left="-5.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2">
-         <GridPane.margin>
-            <Insets bottom="-160.0" left="60.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2">
-         <GridPane.margin>
-            <Insets bottom="-160.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2">
-         <GridPane.margin>
-            <Insets bottom="-160.0" left="120.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-160.0" left="95.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-160.0" left="155.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="60.0" left="-5.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="175.0" left="-5.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="60.0" left="60.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="60.0" left="120.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="175.0" left="120.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="175.0" left="60.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="60.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="175.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="60.0" left="155.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="60.0" left="95.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="175.0" left="95.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="175.0" left="155.0" />
-         </GridPane.margin>
-      </Rectangle>
+      <HBox layoutX="90.0" layoutY="104.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="b11" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b12" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b13" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b14" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b15" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b16" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="113.0" layoutY="505.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="q" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="Q" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="w" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="W" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="e" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="E" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="r" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="R" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="t" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="T" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="y" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="Y" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="u" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="U" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="i" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="I" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="o" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="O" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="p" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="P" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="133.0" layoutY="542.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="a" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="A" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="s" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="S" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="d" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="D" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="f" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="F" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="g" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="G" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="h" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="H" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="j" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="J" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="k" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="K" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="l" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="L" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="173.0" layoutY="579.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="z" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="Z" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="X" textAlignment="CENTER" textOverrun="CLIP" fx:id="x">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="c" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="C" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="v" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="V" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="B" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="n" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="N" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="m" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: Black; -fx-background-color: White;" text="M" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="90.0" layoutY="166.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="b21" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b22" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b23" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b24" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b25" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b26" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="90.0" layoutY="227.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="b31" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b32" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b33" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b34" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b35" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b36" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="90.0" layoutY="289.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="b41" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b42" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b43" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b44" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b45" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b46" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="90.0" layoutY="351.0" prefHeight="62.0" prefWidth="476.0">
+         <children>
+            <Button fx:id="b51" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b52" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b53" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b54" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b55" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b56" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: Black; -fx-background-color: White;" text=" " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
    </children>
-</GridPane>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</AnchorPane>

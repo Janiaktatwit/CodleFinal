@@ -7,7 +7,11 @@ public abstract class RandomWord {
 
 	public abstract String getWord();
 
-	public String randomWord() {
+	/**
+	 * 
+	 * @return
+	 */
+	public static String randomWord() {
 		
 		String[] arr1 = { "CODING", "DOUBLE", "SYNTAX", "STRING", 
 							"METHOD", "MODULE", "BINARY", "BUFFER", 

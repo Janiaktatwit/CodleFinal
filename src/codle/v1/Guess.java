@@ -6,11 +6,14 @@ package codle.v1;
  * @author Gus Cook
  */
 public class Guess extends RandomWord {
+	
 	private String guess;
-	private char[] guessArray;
 	private String ans = getWord();
 	
 	public Guess() {}
+	public Guess(String s) {
+		setGuess(s);
+	}
 	
 	public String getGuess() {
 		return this.guess;
@@ -35,6 +38,11 @@ public class Guess extends RandomWord {
 		return randomWord();
 	}
 
+	/**
+	 * 
+	 * @param index
+	 * @return
+	 */
 	public int compareLettersTJ( int index) {
 
 		char g = this.guess.charAt(index);
@@ -50,6 +58,11 @@ public class Guess extends RandomWord {
 		return 0;
 	}
 	
+	/**
+	 * 
+	 * @param i
+	 * @return
+	 */
 	public boolean checkWin(int i) {
 		if(i==6) {
 			return true;
@@ -60,9 +73,13 @@ public class Guess extends RandomWord {
 		return checkWin(++i);
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public String[] setColor() {
 		String[] color = new String[this.guess.length()];
-		for(int i = 0;i<this.guess.length();i++) {
+		for(int i = 0; i < this.guess.length(); i++) {
 			int t = compareLettersTJ(i);
 			switch(t) {
 			case -2:
