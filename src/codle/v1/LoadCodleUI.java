@@ -135,8 +135,7 @@ public class LoadCodleUI extends Application implements Initializable {
 							try {
 								Color color = (Color) this.letters[k].getBackground().getFills().get(0).getFill();
 								if (this.codleArray[l].getText().equals(this.letters[k].getText())) {
-									if (color.equals(Color.GREEN)) {}
-									else if (color.equals(Color.YELLOW) && colors[j].equals("grey")) {}
+									if (color.equals(Color.color(0, 1.0, 0))) {}
 									else {
 										if (colors[j].equals("green")) {
 											this.letters[k].setStyle("-fx-background-color: #00ff00;");
