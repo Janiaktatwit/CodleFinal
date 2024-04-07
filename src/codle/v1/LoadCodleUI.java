@@ -17,12 +17,16 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
+ * Main method for running the program
  * 
  * @author Gus Cook
+ * @author TJ Janiak
  */
 public class LoadCodleUI extends Application implements Initializable {
 	
 	/**
+	 * All the FXML variables (There's a lot)
+	 * 
 	 * @FXML
 	 */
 	@FXML

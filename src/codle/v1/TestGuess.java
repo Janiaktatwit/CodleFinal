@@ -4,10 +4,17 @@ package codle.v1;
 import java.util.Scanner;
 
 /**
+ * Tester class for the Guess object
  * 
  * @author Gus Cook
+ * @author TJ Janiak
  */
 public class TestGuess {
+	/**
+	 * Method for testing the Guess object using a scanner
+	 * 
+	 * @param args -unused-
+	 */
 	public static void main(String[] args) {
 		String answer = "coding";
 

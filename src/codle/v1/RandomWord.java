@@ -3,13 +3,25 @@ package codle.v1;
 
 import java.util.Random;
 
+/**
+ * Class for obtaining a random word from the matrix of words
+ * 
+ * @author Gus Cook
+ * @author TJ Janiak
+ */
 public abstract class RandomWord {
 
+	/**
+	 * Get a word
+	 * 
+	 * @return the word being obtained
+	 */
 	public abstract String getWord();
 
 	/**
+	 * Returns a random word from the matrix
 	 * 
-	 * @return
+	 * @return a random word
 	 */
 	public static String randomWord() {
 		

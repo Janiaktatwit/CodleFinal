@@ -2,30 +2,62 @@
 package codle.v1;
 
 /**
+ * Class for creating Guess objects and checking for color based on
+ * proximity to the correct answer
  * 
  * @author Gus Cook
+ * @author TJ Janiak
  */
 public class Guess extends RandomWord {
 	
 	private String guess;
 	private String ans = getWord();
 	
+	/**
+	 * Default constructor
+	 * 
+	 */
 	public Guess() {}
+	/**
+	 * 1-arg contructor
+	 * 
+	 * @param s the guessed String
+	 */
 	public Guess(String s) {
 		setGuess(s);
 	}
 	
+	/**
+	 * Getter
+	 * 
+	 * @return guess
+	 */
 	public String getGuess() {
 		return this.guess;
 	}
+	/**
+	 * Setter, changing guess to uppercase
+	 * 
+	 * @param s guess
+	 */
 	public void setGuess(String s) {
 		this.guess = s.toUpperCase();
 	}
 	
+	/**
+	 * Getter for the answer
+	 * 
+	 * @return the answer
+	 */
 	public String getAns() {
 		return this.ans;
 	}
 
+	/**
+	 * Check if guess is six letters
+	 * 
+	 * @return true if six letters, otherwise false
+	 */
 	public boolean validateLength() {
 		if (this.guess.length() == 6) {
 			return true;
@@ -39,9 +71,10 @@ public class Guess extends RandomWord {
 	}
 
 	/**
+	 * Gives an int value based on proximity to the answer
 	 * 
-	 * @param index
-	 * @return
+	 * @param index the index of the String to check
+	 * @return the int value based on proximity
 	 */
 	public int compareLettersTJ( int index) {
 
@@ -59,9 +92,10 @@ public class Guess extends RandomWord {
 	}
 	
 	/**
+	 * Checks for a win using recursion
 	 * 
-	 * @param i
-	 * @return
+	 * @param i the amount of letters in the word minus six
+	 * @return true if i reaches the threshold of six, otherwise false
 	 */
 	public boolean checkWin(int i) {
 		if(i==6) {
@@ -74,8 +108,10 @@ public class Guess extends RandomWord {
 	}
 	
 	/**
+	 * Compares the letters and gives Strings representing the color
+	 * of the letters
 	 * 
-	 * @return
+	 * @return the String array of colors based on the letters
 	 */
 	public String[] setColor() {
 		String[] color = new String[this.guess.length()];
